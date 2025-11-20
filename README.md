@@ -3,37 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5乘5篮球球员抽选器</title>
+    <title>电脑设备信息表</title>
+    <!-- 内嵌CSS美化表格 -->
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 40px;
-            line-height: 1.6;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
         }
-        h1 { color: #333; }
-        .container {
+        body {
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        .table-container {
             max-width: 800px;
             margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* 合并边框 */
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: normal;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa; /* 隔行变色 */
+        }
+        tr:hover {
+            background-color: #e9ecef; /* 鼠标悬浮高亮 */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>5乘5篮球球员抽选器</h1>
-        <p>一款NBA大乱斗小游戏的软件，可以在直播间抽选球员，供连麦的观众选球员的软件。</p>
-        
-        <h2>功能特点：</h2>
-        <ul>
-            <li>自定义球员库</li>
-            <li>自定义音乐和视频</li>
-            <li>自定义字体和比较设置</li>
-            <li>自定义价格方案</li>
-            <li>球员抽选</li>
-        </ul>
-        
-        <h2>联系我们</h2>
-        <p>邮箱：2452292962@qq.com</p>
-        <p>这是一个Python桌面应用程序，提供篮球球员随机抽选功能。</p>
+    <div class="table-container">
+        <h1>电脑设备信息表</h1>
+        <table>
+            <!-- 表头 -->
+            <thead>
+                <tr>
+                    <th>电脑编号</th>
+                    <th>是否可用</th>
+                    <th>公会名字</th>
+                    <th>直播间名字</th>
+                </tr>
+            </thead>
+            <!-- 表格数据 -->
+            <tbody>
+                <tr>
+                    <td>BFEBFBFF000906A3</td>
+                    <td>是</td>
+                    <td>小麦子</td>
+                    <td>小马弟测试员</td>
+                </tr>
+                <!-- 如需添加更多行，直接复制<tr>标签修改数据即可 -->
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
